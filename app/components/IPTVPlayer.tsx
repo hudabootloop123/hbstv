@@ -313,7 +313,7 @@ export default function IPTVPlayer() {
           </div>
 
           {/* Notice Cards */}
-          <div className="w-full hidden md:grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
+          <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
             {/* Troubleshooting Tip */}
             <div className="group relative glass-card border border-amber-500/15 rounded-2xl md:rounded-3xl bg-white/[0.01] overflow-hidden transition-all duration-300 hover:border-amber-500/25">
               <div className="absolute inset-0 bg-gradient-to-br from-amber-500/[0.04] to-transparent pointer-events-none" />
@@ -322,9 +322,9 @@ export default function IPTVPlayer() {
                   <AlertCircle className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-sm sm:text-base font-bold text-amber-400/80 tracking-widest mb-1">Troubleshooting</p>
+                  <p className="text-sm sm:text-base font-bold text-amber-400/80 tracking-widest mb-1">Penyelesaian Masalah</p>
                   <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed font-medium">
-                    Encountering a blank or black screen? Click <span className="text-primary font-bold">Reload Stream</span> in the player controls or <span className="text-primary font-bold">Try Reconnecting</span>. If buffering is frequent, try connecting to a <span className="text-primary font-bold">VPN</span>.
+                    Mengalami layar kosong atau hitam? Klik <span className="text-primary font-bold">Muat ulang</span> pada main kontrol atau <span className="text-primary font-bold">Coba sambungkan kembali</span>. Jika buffering sering terjadi, coba sambungkan ke <span className="text-primary font-bold">VPN</span>.
                   </p>
                 </div>
               </div>
@@ -338,16 +338,16 @@ export default function IPTVPlayer() {
                   <Tv className="w-5 h-5 sm:w-6 sm:h-6" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-sm sm:text-base font-bold text-primary/80 tracking-widest mb-1">প্লেলিস্ট গাইড</p>
+                  <p className="text-sm sm:text-base font-bold text-primary/80 tracking-widest mb-1">Panduan Daftar Putar</p>
                   <p className="text-xs sm:text-sm text-zinc-300 leading-relaxed mb-2.5 font-medium">
-                    এই ওয়েবসাইটে কোনো ডিফল্ট প্লেলিস্ট প্রদান করা হয় না। প্লেলিস্ট পেতে আমাদের কমিউনিটিতে যোগ দিন।
+                    Situs web ini tidak menyediakan daftar putar bawaan. Bergabunglah hubungi kami untuk mendapatkan daftar putar.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <a href="https://t.me/shajonOTT" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-[#2AABEE]/10 border border-[#2AABEE]/20 text-[#2AABEE] hover:bg-[#2AABEE]/20 hover:border-[#2AABEE]/30 hover:scale-[1.02] text-[11px] sm:text-xs font-bold transition-all duration-200">
+                    <a href="https://t.me/anggapsajakenal" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-[#2AABEE]/10 border border-[#2AABEE]/20 text-[#2AABEE] hover:bg-[#2AABEE]/20 hover:border-[#2AABEE]/30 hover:scale-[1.02] text-[11px] sm:text-xs font-bold transition-all duration-200">
                       <FaTelegram size={14} />
                       Telegram
                     </a>
-                    <a href="https://discord.gg/TtWrw8W9B" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-[#5865F2]/10 border border-[#5865F2]/20 text-[#5865F2] hover:bg-[#5865F2]/20 hover:border-[#5865F2]/30 hover:scale-[1.02] text-[11px] sm:text-xs font-bold transition-all duration-200">
+                    <a href="https://discord.gg/Tt" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-[#5865F2]/10 border border-[#5865F2]/20 text-[#5865F2] hover:bg-[#5865F2]/20 hover:border-[#5865F2]/30 hover:scale-[1.02] text-[11px] sm:text-xs font-bold transition-all duration-200">
                       <FaDiscord size={14} />
                       Discord
                     </a>
@@ -366,20 +366,18 @@ export default function IPTVPlayer() {
 
           {/* Main Content Area: Sidebar + Playlist Browser */}
           <div className="flex flex-col lg:flex-row gap-6 w-full">
-            {playlists.length > 0 && (
-              <PlaylistSidebarView
-                playlists={playlists}
-                activePlaylistId={activePlaylistId}
-                setActivePlaylistId={setActivePlaylistId}
-                setPlaylistTab={setPlaylistTab}
-                handleDeletePlaylist={handleDeletePlaylist}
-                isUpdating={isUpdating}
-                updateSuccess={updateSuccess}
-                onUpdatePlaylists={() => refreshAllPlaylists(true)}
-              />
-            )}
+            <PlaylistSidebarView
+              playlists={playlists}
+              activePlaylistId={activePlaylistId}
+              setActivePlaylistId={setActivePlaylistId}
+              setPlaylistTab={setPlaylistTab}
+              handleDeletePlaylist={handleDeletePlaylist}
+              isUpdating={isUpdating}
+              updateSuccess={updateSuccess}
+              onUpdatePlaylists={() => refreshAllPlaylists(true)}
+            />
 
-            <div className={`w-full ${playlists.length > 0 ? "lg:w-2/3 xl:w-3/4" : ""} glass-card p-4 sm:p-6 border border-white/10 sm:border-white/5 rounded-2xl md:rounded-3xl bg-white/[0.01] flex flex-col h-[600px] sm:h-[700px]`}>
+            <div className="w-full lg:w-2/3 xl:w-3/4 glass-card p-4 sm:p-6 border border-white/10 sm:border-white/5 rounded-2xl md:rounded-3xl bg-white/[0.01] flex flex-col h-[600px] sm:h-[700px]">
               <div className="flex items-center justify-between pb-3 sm:pb-4 border-b border-white/10 sm:border-white/5 mb-3 sm:mb-4 flex-wrap gap-2">
                 <div className="flex items-center bg-white/5 p-1 rounded-xl border border-white/10 sm:border-white/5 w-full sm:w-auto">
                   <button
@@ -393,7 +391,7 @@ export default function IPTVPlayer() {
                       }`}
                   >
                     <Tv size={14} />
-                    <span className="whitespace-nowrap">Browse Channels</span>
+                    <span className="whitespace-nowrap">Jelajahi Saluran</span>
                   </button>
                   <button
                     onClick={() => setPlaylistTab("manage")}
@@ -403,7 +401,7 @@ export default function IPTVPlayer() {
                       }`}
                   >
                     <Upload size={14} />
-                    <span className="whitespace-nowrap">Playlists Manager</span>
+                    <span className="whitespace-nowrap">Pengelola Daftar Putar</span>
                   </button>
                 </div>
 
@@ -472,15 +470,15 @@ export default function IPTVPlayer() {
             <div className="flex flex-col sm:flex-row items-center justify-between gap-3 px-4 py-3 rounded-2xl bg-white/[0.02] border border-white/[0.05]">
               <div className="flex items-center gap-2">
                 <p className="text-zinc-400 text-[10px] sm:text-xs font-medium">
-                  Watch premium live TV channels directly from official stream sources.
+                  Saksikan saluran TV langsung premium langsung dari sumber streaming resmi kami.
                 </p>
               </div>
               <div className="flex items-center gap-2">
                 <span className="flex items-center px-3 py-1.5 rounded-xl bg-white/[0.03] border border-white/[0.08] text-[10px] sm:text-xs text-zinc-300 font-medium whitespace-nowrap shadow-sm">
-                  Developed by <span className="text-white font-bold ml-1">S. SHAJON</span>
+                  Developed by <span className="text-white font-bold ml-1">Huda Bootloop</span>
                 </span>
                 <a
-                  href="https://github.com/SHAJON-404/iptv"
+                  href="https://github.com/hudabootloop123/iptv"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/[0.05] hover:bg-white/[0.09] border border-white/[0.08] hover:border-white/[0.18] text-[10px] sm:text-xs text-gray-300 hover:text-white font-semibold transition-all duration-300 shadow-sm whitespace-nowrap"

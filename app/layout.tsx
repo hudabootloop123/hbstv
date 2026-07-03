@@ -28,7 +28,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "IPTV Player — Watch 6500+ Live TV Channels Free",
+  title: "HBS TV — Live TV Channels Premium",
   description:
     "Stream 6500+ live TV channels from Bangladesh, India, and worldwide. Premium IPTV web player with HLS streaming, custom playlist support, and a modern UI. No app install needed.",
   keywords: [
@@ -46,9 +46,9 @@ export const metadata: Metadata = {
     "m3u player",
     "web TV player",
   ],
-  authors: [{ name: "S. SHAJON", url: "https://github.com/SHAJON-404" }],
-  creator: "S. SHAJON",
-  publisher: "S. SHAJON",
+  authors: [{ name: "HUDA BOOTLOOP", url: "https://github.com/hudabootloop123" }],
+  creator: "HUDA BOOTLOOP",
+  publisher: "HUDA BOOTLOOP",
   metadataBase: new URL(siteUrl),
   alternates: {
     canonical: "/",
@@ -65,8 +65,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    siteName: "IPTV Player",
-    title: "IPTV Player — Watch 6500+ Live TV Channels Free",
+    siteName: "HBS TV",
+    title: "HBS TV — Live TV Channels Premium",
     description:
       "Stream 6500+ live TV channels from Bangladesh, India, and worldwide. Premium IPTV web player with HLS streaming, custom playlist support, and a modern UI.",
     images: [

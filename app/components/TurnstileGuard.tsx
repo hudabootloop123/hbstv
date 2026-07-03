@@ -95,7 +95,7 @@ export default function TurnstileGuard({ children }: TurnstileGuardProps) {
         <div className="flex items-center gap-3">
           <div className="relative w-8 h-8 sm:w-10 sm:h-10 rounded-lg overflow-hidden border border-white/10 flex-shrink-0 bg-white/5">
             <Image
-              src="/logo.png"
+              src="/logo.jpg"
               alt="Logo"
               fill
               sizes="40px"

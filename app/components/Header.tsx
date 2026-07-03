@@ -31,7 +31,7 @@ export default function Header() {
             >
               <div className="relative w-10 h-10 sm:w-14 sm:h-14 rounded-xl sm:rounded-2xl overflow-hidden border border-white/10 sm:border-white/15 group-hover:border-primary/40 shadow-xl shadow-primary/20 bg-white/5 flex-shrink-0 transition-colors">
                 <Image
-                  src="/logo.png"
+                  src="/logo.jpg"
                   alt="IPTV Player Logo"
                   fill
                   sizes="(max-width: 640px) 40px, 56px"
@@ -42,17 +42,18 @@ export default function Header() {
               <div className="flex flex-col justify-center">
                 {/* Mobile UI Brand */}
                 <span className="text-lg font-black tracking-tight text-white sm:hidden leading-none select-none">
-                  IP<span className="gradient-text">TV</span>
+                  HBS<span className="gradient-text">TV</span>
                 </span>
 
                 {/* Desktop UI Brand */}
                 <div className="hidden sm:flex items-baseline gap-1">
-                  <span className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-white">
-                    IP
-                  </span>
                   <span className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight gradient-text">
-                    TV Player
+                    HBS
                   </span>
+                  <span className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight text-white">
+                    TV
+                  </span>
+                  
                 </div>
 
                 {/* Desktop Live Broadcast Badge */}
@@ -60,7 +61,7 @@ export default function Header() {
                   <div className="flex items-center gap-1.5">
                     <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
                     <span className="text-[9px] sm:text-[10px] font-bold tracking-widest uppercase text-emerald-400">
-                      LIVE BROADCAST
+                      SIARAN LANGSUNG
                     </span>
                   </div>
                 </div>

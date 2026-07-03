@@ -196,7 +196,7 @@ export const TrendingChannels = React.memo(function TrendingChannels({
               <div className="flex items-center gap-2 flex-shrink-0">
                 <span className="flex items-center gap-1 text-[10px] font-bold text-rose-400 bg-rose-500/10 border border-rose-500/20 px-1.5 py-0.5 rounded-lg select-none">
                   <span className="w-1.5 h-1.5 rounded-full bg-rose-500 animate-ping inline-block" />
-                  {ch.viewers} live
+                  {ch.viewers} langsung
                 </span>
                 <Play
                   size={12}

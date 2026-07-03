@@ -510,7 +510,7 @@ export default function DashboardPage() {
                   ) : (
                     <>
                       <RefreshCw size={14} className="text-primary hover:rotate-180 transition-transform duration-500" />
-                      <span>Update Playlists Data</span>
+                      <span>Perbarui Data Daftar Putar</span>
                     </>
                   )}
                 </button>

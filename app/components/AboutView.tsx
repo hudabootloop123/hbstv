@@ -32,7 +32,7 @@ export default function AboutView() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-white/10 hover:border-primary/50 bg-white/5 hover:bg-primary/10 text-zinc-300 hover:text-white font-bold text-xs sm:text-sm transition-all duration-300 active:scale-95 cursor-pointer"
             >
               <ArrowLeft size={16} />
-              <span>Back to Player</span>
+              <span>Kembali ke Beranda</span>
             </Link>
           </div>
 
@@ -52,8 +52,8 @@ export default function AboutView() {
               <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary to-violet-500 blur-md opacity-40 scale-105" />
               <div className="relative w-32 h-32 sm:w-44 sm:h-44 rounded-full overflow-hidden border-2 border-white/20 shadow-2xl">
                 <Image
-                  src="https://avatars.githubusercontent.com/u/171383675?v=4"
-                  alt="S. SHAJON"
+                  src="/hblogo.png"
+                  alt="HUDA-101"
                   fill
                   className="object-cover"
                   priority
@@ -68,29 +68,29 @@ export default function AboutView() {
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary">
                   <User size={12} className="animate-pulse" />
                   <span className="text-[10px] font-black uppercase tracking-wider">
-                    Core Developer
+                    PENGEMBANG INTI
                   </span>
                 </div>
                 <h1 className="text-3xl sm:text-5xl font-black tracking-tight text-white leading-tight">
-                  S. SHAJON
+                  Huda Bootloop
                 </h1>
                 <p className="text-xs sm:text-sm font-bold uppercase tracking-widest text-primary/80">
-                  Self-Learned Developer & Reverse Engineer
+                  PENGEMBANG OTODIDIK & REKAYASA BALIK
                 </p>
               </div>
 
               <p className="text-sm sm:text-base text-zinc-300 leading-relaxed font-medium max-w-xl">
-                Hi! I am a self-learned developer and reverse engineer. I created this open-source IPTV player project, which supports both DASH and HLS streams. Feel free to contact me directly if you face any issues.
+                Hai! Saya seorang pengembang dan ahli rekayasa balik otodidak. Saya membuat proyek pemutar IPTV sumber terbuka ini, yang mendukung aliran DASH dan HLS. Jangan ragu untuk menghubungi saya langsung jika Anda menghadapi masalah apa pun.
               </p>
 
               {/* Social Channels Panel */}
               <div className="pt-2 w-full">
                 <p className="text-[10px] sm:text-xs font-bold text-zinc-400 uppercase tracking-widest mb-3 text-center md:text-left">
-                  Connect & Support
+                 HUBUNGI & DUKUNG
                 </p>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full max-w-xl mx-auto md:mx-0">
                   <a
-                    href="https://t.me/shajonOTT"
+                    href="https://t.me/anggapsajakenal"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/[0.02] hover:bg-[#26A5E4]/10 text-zinc-300 hover:text-[#26A5E4] border border-white/10 hover:border-[#26A5E4]/50 font-bold text-xs sm:text-sm transition-all duration-300 active:scale-95 shadow-sm hover:shadow-[0_0_15px_rgba(38,165,228,0.15)] cursor-pointer"
@@ -99,7 +99,7 @@ export default function AboutView() {
                     <span>Telegram</span>
                   </a>
                   <a
-                    href="https://github.com/SHAJON-404"
+                    href="https://github.com/hudabootloop123"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/[0.02] hover:bg-white/10 text-zinc-300 hover:text-white border border-white/10 hover:border-white/30 font-bold text-xs sm:text-sm transition-all duration-300 active:scale-95 shadow-sm hover:shadow-[0_0_15px_rgba(255,255,255,0.05)] cursor-pointer"
@@ -108,7 +108,7 @@ export default function AboutView() {
                     <span>GitHub</span>
                   </a>
                   <a
-                    href="https://www.facebook.com/shahmakhdumshajonofficial"
+                    href="https://www.facebook.com/hbstoreofficial"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/[0.02] hover:bg-[#1877F2]/10 text-zinc-300 hover:text-[#1877F2] border border-white/10 hover:border-[#1877F2]/50 font-bold text-xs sm:text-sm transition-all duration-300 active:scale-95 shadow-sm hover:shadow-[0_0_15px_rgba(24,119,242,0.15)] cursor-pointer"
@@ -118,7 +118,7 @@ export default function AboutView() {
                     <span>Facebook</span>
                   </a>
                   <a
-                    href="https://youtube.com/@SHAJON-404"
+                    href="https://youtube.com/@hudabootloop"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-white/[0.02] hover:bg-[#FF0000]/10 text-zinc-300 hover:text-[#FF0000] border border-white/10 hover:border-[#FF0000]/50 font-bold text-xs sm:text-sm transition-all duration-300 active:scale-95 shadow-sm hover:shadow-[0_0_15px_rgba(255,0,0,0.15)] cursor-pointer"
@@ -148,9 +148,10 @@ export default function AboutView() {
                 <div className="inline-flex items-center justify-center p-3 rounded-2xl bg-primary/10 border border-primary/25 text-primary shadow-[0_0_15px_rgba(139,92,246,0.15)]">
                   <Heart size={20} className="animate-pulse" />
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-violet-300">Loving This Project?</h3>
+                <h3 className="text-lg sm:text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-violet-300">Suka dengan proyek ini?
+</h3>
                 <p className="text-xs sm:text-sm text-zinc-350 font-medium leading-relaxed max-w-sm">
-                  This player is open-source and free forever. If you like this project, please give it a star on GitHub! It keeps development active.
+                  Pemutar media ini bersifat Premium. Jika Anda menyukai proyek ini, silakan beri bintang di GitHub! Ini akan menjaga pengembangan tetap aktif.
                 </p>
 
                 {/* Benefits checklist to fill empty vertical space and balance layout */}
@@ -159,32 +160,35 @@ export default function AboutView() {
                     <span className="flex-shrink-0 w-6 h-6 rounded-lg bg-primary/10 flex items-center justify-center transition-transform group-hover:scale-110">
                       <Star size={12} className="text-primary fill-primary/50" />
                     </span>
-                    <span className="text-xs sm:text-sm text-zinc-300 font-medium leading-normal">Keep the project active and free forever</span>
+                    <span className="text-xs sm:text-sm text-zinc-300 font-medium leading-normal">Pertahankan proyek ini tetap aktif dan gratis selamanya.
+</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 rounded-xl bg-white/[0.02] border border-white/5 hover:border-primary/20 transition-all duration-300 group">
                     <span className="flex-shrink-0 w-6 h-6 rounded-lg bg-primary/10 flex items-center justify-center transition-transform group-hover:scale-110">
                       <Star size={12} className="text-primary fill-primary/50" />
                     </span>
-                    <span className="text-xs sm:text-sm text-zinc-300 font-medium leading-normal">Show appreciation for the hard work</span>
+                    <span className="text-xs sm:text-sm text-zinc-300 font-medium leading-normal">Tunjukkan apresiasi atas kerja kerasnya.
+</span>
                   </div>
                   <div className="flex items-center gap-3 p-3 rounded-xl bg-white/[0.02] border border-white/5 hover:border-primary/20 transition-all duration-300 group">
                     <span className="flex-shrink-0 w-6 h-6 rounded-lg bg-primary/10 flex items-center justify-center transition-transform group-hover:scale-110">
                       <Star size={12} className="text-primary fill-primary/50" />
                     </span>
-                    <span className="text-xs sm:text-sm text-zinc-300 font-medium leading-normal">Help reach more developers globally</span>
+                    <span className="text-xs sm:text-sm text-zinc-300 font-medium leading-normal">Bantu menjangkau lebih banyak pengembang di seluruh dunia.
+</span>
                   </div>
                 </div>
               </div>
 
               <div className="pt-2 w-full relative z-10">
                 <a
-                  href="https://github.com/SHAJON-404/iptv"
+                  href="https://github.com/hudabootloop123/iptv"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-2 w-full px-5 py-2.5 rounded-xl bg-gradient-to-r from-primary to-violet-600 hover:opacity-95 text-white font-extrabold text-xs sm:text-sm transition-all duration-300 shadow-md shadow-primary/10 active:scale-95 cursor-pointer"
                 >
                   <FaGithub size={15} />
-                  <span>Star Repository on GitHub</span>
+                  <span>Beri Bintang Repositori di GitHub</span>
                 </a>
               </div>
             </motion.div>
@@ -203,9 +207,10 @@ export default function AboutView() {
                 <div className="inline-flex items-center justify-center p-3 rounded-2xl bg-amber-500/10 border border-amber-500/25 text-amber-400 shadow-[0_0_15px_rgba(245,158,11,0.15)]">
                   <Coins size={20} className="animate-bounce" />
                 </div>
-                <h3 className="text-lg sm:text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-yellow-300">Support the Developer</h3>
+                <h3 className="text-lg sm:text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-400 to-yellow-300">Dukung Pengembang
+</h3>
                 <p className="text-xs sm:text-sm text-zinc-355 font-medium leading-relaxed max-w-sm">
-                  If you want to support the developer&apos;s work, you can donate via cryptocurrency:
+                  Jika Anda ingin mendukung karya pengembang, Anda dapat berdonasi melalui:
                 </p>
 
                 {/* Donation details list */}
@@ -224,7 +229,7 @@ export default function AboutView() {
                     </div>
                     <div className="flex-shrink-0 flex items-center gap-2">
                       <span className={`text-[10px] font-bold tracking-wider uppercase transition-opacity duration-300 ${copiedText === "binance-uid" ? "text-emerald-400 opacity-100" : "text-amber-400/60 opacity-0 group-hover:opacity-100"}`}>
-                        {copiedText === "binance-uid" ? "Copied!" : "Copy"}
+                        {copiedText === "binance-uid" ? "Tersalin!" : "Salin"}
                       </span>
                       <div className={`p-2 rounded-lg transition-all duration-300 ${copiedText === "binance-uid" ? "bg-emerald-500/20 text-emerald-400" : "bg-amber-500/10 text-amber-400 group-hover:bg-amber-500/20 group-hover:scale-105"}`}>
                         {copiedText === "binance-uid" ? <Check size={14} className="stroke-[3]" /> : <Copy size={14} className="stroke-[2.5]" />}
@@ -246,7 +251,7 @@ export default function AboutView() {
                     </div>
                     <div className="flex-shrink-0 flex items-center gap-2">
                       <span className={`text-[10px] font-bold tracking-wider uppercase transition-opacity duration-300 ${copiedText === "bep20" ? "text-emerald-400 opacity-100" : "text-amber-400/60 opacity-0 group-hover:opacity-100"}`}>
-                        {copiedText === "bep20" ? "Copied!" : "Copy"}
+                        {copiedText === "bep20" ? "Tersalin!" : "Salin"}
                       </span>
                       <div className={`p-2 rounded-lg transition-all duration-300 ${copiedText === "bep20" ? "bg-emerald-500/20 text-emerald-400" : "bg-amber-500/10 text-amber-400 group-hover:bg-amber-500/20 group-hover:scale-105"}`}>
                         {copiedText === "bep20" ? <Check size={14} className="stroke-[3]" /> : <Copy size={14} className="stroke-[2.5]" />}
@@ -268,7 +273,7 @@ export default function AboutView() {
                     </div>
                     <div className="flex-shrink-0 flex items-center gap-2">
                       <span className={`text-[10px] font-bold tracking-wider uppercase transition-opacity duration-300 ${copiedText === "trc20" ? "text-emerald-400 opacity-100" : "text-amber-400/60 opacity-0 group-hover:opacity-100"}`}>
-                        {copiedText === "trc20" ? "Copied!" : "Copy"}
+                        {copiedText === "trc20" ? "Tersalin!" : "Salin"}
                       </span>
                       <div className={`p-2 rounded-lg transition-all duration-300 ${copiedText === "trc20" ? "bg-emerald-500/20 text-emerald-400" : "bg-amber-500/10 text-amber-400 group-hover:bg-amber-500/20 group-hover:scale-105"}`}>
                         {copiedText === "trc20" ? <Check size={14} className="stroke-[3]" /> : <Copy size={14} className="stroke-[2.5]" />}

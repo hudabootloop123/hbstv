@@ -28,7 +28,7 @@ export default async function LoginPage() {
         <div className="mb-8">
           <div className="relative w-16 h-16 rounded-2xl mx-auto mb-4 overflow-hidden border border-white/15 shadow-xl shadow-primary/20 bg-white/5 flex-shrink-0">
             <Image
-              src="/logo.png"
+              src="/logo.jpg"
               alt="IPTV Player Logo"
               fill
               className="object-cover"

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { List, Tv, Link as LinkIcon, FileText, Trash2, RefreshCw, Check } from "lucide-react";
-import { Playlist, getIsAppleDevice } from "../../hooks/useIPTVPlaylists";
+import { Playlist, getIsIOS } from "../../hooks/useIPTVPlaylists";
 
 interface PlaylistSidebarViewProps {
   playlists: Playlist[];
@@ -64,20 +64,23 @@ export const PlaylistSidebarView = React.memo(function PlaylistSidebarView({
                 <h5 className={`font-bold text-xs sm:text-sm truncate pr-2 ${
                   isUpdating ? "text-primary/50" : updateSuccess ? "text-emerald-400" : "text-primary group-hover/btn:text-white transition-colors"
                 }`}>
-                  {isUpdating ? "Updating Playlists..." : updateSuccess ? "Updated Successfully" : "Update Playlist"}
+                  {isUpdating ? "Memperbarui Daftar Putar..." : updateSuccess ? "Pembaruan Berhasil" : "Perbarui Daftar Putar"}
                 </h5>
+                <p className="text-[9px] sm:text-[10px] text-zinc-400 font-semibold uppercase tracking-wider group-hover/btn:text-zinc-300 transition-colors">
+                  {isUpdating ? "Fetching live sources" : updateSuccess ? "Cache synced" : "Sync channels & cache"}
+                </p>
               </div>
             </div>
           </button>
         </div>
       )}
 
-      {/* 2. Your Playlists Header */}
+      {/* 2. Daftar Putar Anda Header */}
       <div className="flex items-center justify-between pb-3 sm:pb-4 border-b border-white/10 sm:border-white/5 mb-3 sm:mb-4 flex-shrink-0">
         <div className="flex items-center bg-white/5 p-1 rounded-xl border border-white/10 sm:border-white/5 w-full">
           <div className="flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg text-xs sm:text-sm font-bold w-full bg-primary text-white shadow-lg shadow-primary/20 cursor-default">
             <List size={14} />
-            <span className="whitespace-nowrap">Your Playlists</span>
+            <span className="whitespace-nowrap">Daftar Putar Anda</span>
           </div>
         </div>
       </div>
@@ -89,14 +92,14 @@ export const PlaylistSidebarView = React.memo(function PlaylistSidebarView({
             <div className="p-3 rounded-full bg-white/5 border border-white/10 mb-1">
               <List size={24} className="text-zinc-500" />
             </div>
-            <p className="text-sm font-bold text-zinc-300">You have no playlists added.</p>
-            <p className="text-xs">Please add a playlist first.</p>
+            <p className="text-sm font-bold text-zinc-300">Anda belum menambahkan daftar putar apa pun.</p>
+            <p className="text-xs">Silakan tambahkan daftar putar terlebih dahulu.</p>
           </div>
         ) : (
           playlists.map((pl) => {
             const isActive = pl.id === activePlaylistId;
             const filteredCount = (
-              getIsAppleDevice()
+              getIsIOS()
                 ? pl.channels.filter(c => !(c.type === "dash" || c.url.includes(".mpd") || c.url.endsWith(".mpd")))
                 : pl.channels
             ).length;

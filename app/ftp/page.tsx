@@ -21,7 +21,7 @@ const ftpServers = [
     host: "103.225.94.27",
     url: "http://103.225.94.27/Infobase/",
     description:
-      "High-speed BDIX local movie portal with TV shows, games, and software archive. Extremely fast on supported ISP lines.",
+      "Portal film lokal BDIX berkecepatan tinggi dengan acara TV, game, dan arsip perangkat lunak. Sangat cepat pada jalur ISP yang didukung.",
     badge: "Multi-Gigabit",
     icon: Database,
     speed: "100 Mbps+",
@@ -38,7 +38,7 @@ const ftpServers = [
     host: "server1.ftpbd.net",
     url: "https://server1.ftpbd.net/#blog",
     description:
-      "Popular media server with fresh releases, extensive movie library, series, games, blog reviews, and direct downloads.",
+      "Server media populer dengan rilis terbaru, koleksi film yang luas, serial, game, ulasan blog, dan unduhan langsung.",
     badge: "Premium Link",
     icon: Network,
     speed: "100 Mbps+",
@@ -90,8 +90,8 @@ export default function FtpPage() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-3xl sm:text-5xl font-black tracking-tight leading-[1.1]"
             >
-              High-Speed{" "}
-              <span className="gradient-text">FTP Servers</span>
+              Server FTP{" "}
+              <span className="gradient-text">Berkecepatan Tinggi</span>
             </motion.h1>
 
             <motion.p
@@ -100,9 +100,7 @@ export default function FtpPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-sm sm:text-base text-gray-400 font-medium max-w-xl mx-auto leading-relaxed"
             >
-              Access local high-speed entertainment archives with zero-buffer
-              streaming, massive directories, and blazing fast downloads from
-              BDIX peered servers.
+              Akses arsip hiburan lokal berkecepatan tinggi dengan streaming tanpa buffering, direktori besar, dan unduhan super cepat dari server BDIX yang terhubung.
             </motion.p>
           </div>
 

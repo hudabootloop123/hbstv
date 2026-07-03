@@ -22,58 +22,58 @@ import Header from "../components/Header";
 const faqs = [
   {
     id: "faq-dmca",
-    question: "DMCA & Copyright Disclaimer",
+    question: "Penafian DMCA dan Hak Cipta",
     answer:
-      "This website is strictly an IPTV player. We do not host, provide, distribute, or sell any IPTV links, playlists, or media content. The player solely reads and plays data from the user's own provided M3U or JSON playlist files.",
+      "Situs web ini murni merupakan pemutar IPTV. Kami tidak menghosting, menyediakan, mendistribusikan, atau menjual tautan IPTV, daftar putar, atau konten media apa pun. Pemutar ini hanya membaca dan memutar data dari file daftar putar M3U atau JSON yang disediakan oleh pengguna.",
     icon: Scale,
   },
   {
     id: "faq-community",
-    question: "Are the playlists from Discord/Telegram affiliated with this project?",
+    question: "Apakah daftar putar dari Discord/Telegram berafiliasi dengan proyek ini?",
     answer:
-      "No. This IPTV Player is an independent open-source project. Any playlists shared in our community channels (Discord/Telegram) are provided by users and have absolutely no relation to this project. If you have issues regarding the player's functionality, please create an issue on our GitHub repository and we will solve it.",
+      "Tidak. Pemutar IPTV ini adalah proyek sumber terbuka independen. Semua daftar putar yang dibagikan di saluran komunitas kami (Discord/Telegram) disediakan oleh pengguna dan sama sekali tidak ada hubungannya dengan proyek ini. Jika Anda memiliki masalah terkait fungsionalitas pemutar, silakan buat masalah di repositori GitHub kami dan kami akan menyelesaikannya.",
     icon: Users,
   },
   {
     id: "faq-1",
-    question: "What is IPTV and how does this player work?",
+    question: "Apa itu IPTV dan bagaimana cara kerja pemutar ini?",
     answer:
-      "IPTV (Internet Protocol Television) delivers television content over the internet instead of traditional terrestrial, satellite, or cable formats. This player is a web-based client that plays live streams (such as HLS .m3u8 files) directly in your browser. You can import your own custom playlists to start watching.",
+      "IPTV (Internet Protocol Television) menyajikan konten televisi melalui internet, bukan melalui format terestrial, satelit, atau kabel tradisional. Pemutar ini adalah klien berbasis web yang memutar siaran langsung (seperti file HLS .m3u8) langsung di browser Anda. Anda dapat mengimpor daftar putar khusus Anda sendiri untuk mulai menonton.",
     icon: Tv,
   },
   {
     id: "faq-2",
-    question: "How do I load or import custom playlists?",
+    question: "Bagaimana cara memuat atau mengimpor daftar putar khusus?",
     answer:
-      "To import a custom playlist, click on the 'Playlists Manager' tab inside the channel list section. You can either paste a public M3U URL (e.g., from GitHub) or upload a local playlist file (.m3u, .m3u8, or .json). Once imported, it will be stored securely in your browser cache and appear in the 'Your Playlists' sidebar.",
+      "Untuk mengimpor daftar putar khusus, klik tab 'Pengelola Daftar Putar' di bagian daftar saluran. Anda dapat menempelkan URL M3U publik (misalnya, dari GitHub) atau mengunggah file daftar putar lokal (.m3u, .m3u8, atau .json). Setelah diimpor, daftar putar akan disimpan dengan aman di cache browser Anda dan muncul di bilah sisi 'Daftar Putar Anda'.",
     icon: ListPlus,
   },
   {
     id: "faq-3",
-    question: "Why do some channels fail to load or show 'Stream Unavailable'?",
+    question: "Mengapa beberapa saluran gagal dimuat atau menampilkan 'Streaming Tidak Tersedia'?",
     answer:
-      "Live streams can go offline for various reasons: the stream source is temporarily overloaded, the broadcaster changed the URL, or the stream has geographical restrictions (geo-blocking). If a stream fails to load, try clicking the 'Try Reconnecting' button, or switch to a different channel.",
+      "Siaran langsung dapat terputus karena berbagai alasan: sumber siaran sementara kelebihan beban, penyiar mengubah URL, atau siaran memiliki pembatasan geografis (pemblokiran geografis). Jika siaran gagal dimuat, coba klik tombol 'Coba Sambungkan Kembali', atau beralih ke saluran lain.",
     icon: ShieldAlert,
   },
   {
     id: "faq-4",
-    question: "Do I need to install any app or extensions?",
+    question: "Apakah saya perlu menginstal aplikasi atau ekstensi apa pun?",
     answer:
-      "No! This IPTV player runs completely in modern web browsers (Chrome, Safari, Edge, Firefox) on mobile devices, tablets, and computers. It has built-in custom HLS (.m3u8) and DASH (.mpd) stream players, so no additional extensions or app installations are required.",
+      "Tidak! Pemutar IPTV ini berjalan sepenuhnya di peramban web modern (Chrome, Safari, Edge, Firefox) pada perangkat seluler, tablet, dan komputer. Pemutar ini memiliki pemutar streaming HLS (.m3u8) dan DASH (.mpd) khusus bawaan, sehingga tidak diperlukan ekstensi atau instalasi aplikasi tambahan.",
     icon: Globe,
   },
   {
     id: "faq-5",
-    question: "Is this service free and legal?",
+    question: "Apakah layanan ini legal?",
     answer:
-      "Yes, this web player is 100% free to use. We do not host any stream files or media databases. We encourage users to only load playlist links that they have the legal right to stream.",
+      "Ya, pemutar web ini 100% legal untuk digunakan. Kami tidak menyimpan file streaming atau basis data media apa pun. Kami mendorong pengguna untuk hanya memuat tautan daftar putar yang mereka miliki hak legal untuk melakukan streaming.",
     icon: BookOpen,
   },
   {
     id: "faq-6",
-    question: "How can I contact support or report bugs?",
+    question: "Bagaimana cara saya menghubungi dukungan atau melaporkan bug?",
     answer:
-      "For any queries, suggestions, or technical support, please reach out to us via Telegram or Email. You can also follow our official GitHub repository (SHAJON-404/iptv) for code updates, bug reports, and new features.",
+      "Untuk pertanyaan, saran, atau dukungan teknis apa pun, silakan hubungi kami melalui Telegram atau Email. Anda juga dapat mengikuti repositori GitHub resmi kami (hudabootloop123) untuk pembaruan kode, laporan bug, dan fitur baru.",
     icon: MessageCircle,
   },
 ];
@@ -102,7 +102,7 @@ export default function FAQPage() {
             >
               <HelpCircle size={14} className="text-primary animate-pulse" />
               <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-primary">
-                Help & Knowledgebase
+                BANTUAN & BASIS PENGETAHUAN
               </span>
             </motion.div>
 
@@ -112,7 +112,8 @@ export default function FAQPage() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-3xl sm:text-5xl font-black tracking-tight leading-[1.1]"
             >
-              Frequently Asked <span className="gradient-text">Questions</span>
+            <span className="gradient-text">Pertanyaan </span>
+            yang Sering Diajukan 
             </motion.h1>
 
             <motion.p
@@ -121,8 +122,8 @@ export default function FAQPage() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-sm sm:text-base text-gray-400 font-medium max-w-xl mx-auto leading-relaxed"
             >
-              Got questions about custom playlists, stream issues, or compatibility?
-              Find quick answers and guides below.
+              Punya pertanyaan tentang daftar putar khusus, masalah streaming, atau kompatibilitas?
+              Temukan jawaban cepat dan panduan di bawah
             </motion.p>
           </div>
 
@@ -189,14 +190,13 @@ export default function FAQPage() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="mt-12 p-6 rounded-2xl border border-white/10 sm:border-white/5 bg-white/[0.01] backdrop-blur-sm text-center max-w-xl mx-auto space-y-4"
           >
-            <h3 className="text-base sm:text-lg font-bold">Still have questions?</h3>
+            <h3 className="text-base sm:text-lg font-bold">Masih ada pertanyaan?</h3>
             <p className="text-xs sm:text-sm text-zinc-400 font-medium">
-              If you couldn&apos;t find your answer here, feel free to reach out for direct support.
-              We are active on Telegram and Email.
+              Jika Anda tidak menemukan jawaban di sini, jangan ragu untuk menghubungi dukungan langsung. Kami aktif di Telegram dan Email.
             </p>
             <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
               <a
-                href="https://t.me/SHAJON"
+                href="https://t.me/anggapsajakenal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-primary hover:bg-primary/95 text-white font-extrabold text-xs sm:text-sm transition-all duration-300 shadow-md shadow-primary/10 hover:scale-[1.01] active:scale-[0.99] cursor-pointer"
@@ -205,7 +205,7 @@ export default function FAQPage() {
                 <span>Contact via Telegram</span>
               </a>
               <a
-                href="mailto:shahmakhdumshajon@gmail.com"
+                href="mailto:hudabootloop@gmail.com"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-white/10 hover:bg-white/15 text-white font-extrabold text-xs sm:text-sm transition-all duration-300 shadow-md hover:scale-[1.01] active:scale-[0.99] cursor-pointer border border-white/5"
               >
                 <Mail size={15} />
