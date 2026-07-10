@@ -45,6 +45,7 @@ interface VideoPlayerViewProps {
   isFullscreen: boolean;
   isPip: boolean;
   showControls: boolean;
+  activeAutoQualityId?: number | string | null;
   activeSeekIndicator: { side: "left" | "right"; visible: boolean };
   isPipSupported: boolean;
   availableQualities: StreamQuality[];
@@ -59,6 +60,7 @@ interface VideoPlayerViewProps {
   handlePlayerDoubleClick: (e: React.MouseEvent<HTMLDivElement>) => void;
   handleReload: () => void;
   handleMouseMove: () => void;
+
 }
 
 function getFriendlyErrorMessage(rawError: string): { title: string; desc: string } {
